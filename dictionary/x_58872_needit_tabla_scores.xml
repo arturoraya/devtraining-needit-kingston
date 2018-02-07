@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Tabla scores" max_length="40" name="x_58872_needit_tabla_scores" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Detalles" max_length="265" name="detalles_tbl" type="string"/>
+        <element label="Fecha" max_length="40" name="fecha_tbl" type="glide_date"/>
+        <element label="Requested for" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_requested_for"/>
+        </index>
+    </element>
+</database>
